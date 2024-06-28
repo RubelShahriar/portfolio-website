@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design</title>
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- emailjs scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "7o7FsvKBfmW-bqzd4",
+        });
+      })();
+    </script>
+    <!-- boxicons link -->
+    <link rel="stylesheet" href="./boxicons-2.1.4/css/boxicons.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul class="sidebar">
+            <li onclick="hideSideBar()">
+              <a href="#"><i class="bx bx-x"></i></a>
+            </li>
+            <li onclick="hideSideBar()"><a href="#about-me">About</a></li>
+            <li onclick="hideSideBar()">
+              <a href="#tech-stack">Tech Stack</a>
+            </li>
+            <li onclick="hideSideBar()"><a href="#services">Services</a></li>
+            <li onclick="hideSideBar()"><a href="#how-it-works">Process</a></li>
+            <li onclick="hideSideBar()"><a href="#projects">Projects</a></li>
+            <li onclick="hideSideBar()"><a href="#faqs">FAQ</a></li>
+            <li onclick="hideSideBar()"><a href="#why-me">Why me</a></li>
+            <li onclick="hideSideBar()">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li onclick="hideSideBar()"><a href="#contact">Contact</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" class="logo"
+                ><img src="./images/Logo.png" alt="logo"
+              /></a>
+            </li>
+            <li class="hide-on-mobile"><a href="#about-me">About</a></li>
+            <li class="hide-on-mobile"><a href="#tech-stack">Tech Stack</a></li>
+            <li class="hide-on-mobile"><a href="#services">Services</a></li>
+            <li class="hide-on-mobile"><a href="#how-it-works">Process</a></li>
+            <li class="hide-on-mobile"><a href="#projects">Projects</a></li>
+            <li class="hide-on-mobile"><a href="#faqs">FAQ</a></li>
+            <li class="hide-on-mobile"><a href="#why-me">Why me</a></li>
+            <li class="hide-on-mobile">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li class="hide-on-mobile">
+              <a href="#contact" class="nav-contact">Contact</a>
+            </li>
+            <li onclick="showSideBar()" class="menu-btn">
+              <a href="#"><i class="bx bx-menu"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="banner" id="banner">
+        <div class="container flex">
+          <div>
+            <h1>I'm A Professional Website <span> Designer</span></h1>
+            <p>
+              Allow me to assist you in successfully completing your project.
+            </p>
+            <p class="description">
+              I am a passionate and dedicated web designer committed to crafting
+              beautiful and functional websites. With a blend of creativity and
+              technical expertise, I bring your vision to life, creating digital
+              experiences that captivate and engage users.
+            </p>
+            <div class="btn-container">
+              <a href="#contact">contact</a>
+              <a href="#contact">get consultation</a>
+            </div>
+          </div>
+          <div class="flex img-container">
+            <img src="./images/Banner image.jpg" alt="banner image" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="about-me p-100 bg-gray" id="about-me">
+        <div class="container">
+          <div class="title"><h2>About Me</h2></div>
+          <div class="flex">
+            <div class="inner-flex">
+              <img src="./images/About image.jpg" alt="about image" />
+            </div>
+            <div>
+              <p>
+                Hello! I’m Rubel Mia, a web designer with 5+ years of experience
+                in creating dynamic and responsive websites. My journey in web
+                design started with a fascination for how websites could blend
+                aesthetics and functionality. Over the years, I have honed my
+                skills in various aspects of web design, including UX/UI design,
+                front-end development, and graphic design.
+              </p>
+              <p>
+                My journey into web design began with a fascination for
+                technology and a love for creativity. Over the years, I've honed
+                my skills in HTML, CSS, JavaScript, and various web design tools
+                and frameworks. I'm adept at both front-end and back-end
+                development, allowing me to build complete, functional websites
+                from the ground up.
+              </p>
+              <div class="info">
+                <p><span>Name: </span>Rubel Mia</p>
+                <hr />
+                <p>
+                  <span>Email: </span>
+                  <a href="mailto:mr.miarubel@gmail.com" class="email">
+                    mr.rubelshahriar@gmail.com
+                  </a>
+                </p>
+                <hr />
+                <p><span>Age: </span>24</p>
+                <hr />
+                <p class="from-p"><span>From: </span>Sylhet, Bangladesh</p>
+                <p>
+                  <a href="https://www.linkedin.com/in/rubelmiaa/" class="hire">
+                    Hire me
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tech-stack p-100" id="tech-stack">
+        <div class="container">
+          <div class="title"><h2>Technologies I Use</h2></div>
+          <div class="grid-container">
+            <div>
+              <img src="./images/Logo-HTML5.png" alt="" />
+              <p>HTML</p>
+            </div>
+            <div>
+              <img src="./images/Logo-CSS3.png" alt="" />
+              <p>CSS</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Bootstrap.png" alt="" />
+              <p>bootstrap</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Tailwind CSS.png" alt="" />
+              <p>tailwind CSS</p>
+            </div>
+            <div>
+              <img src="./images/Logo-React.png" alt="" />
+              <p>react</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Next.js.png" alt="" />
+              <p>next js</p>
+            </div>
+            <div>
+              <img src="./images/Logo-After Effects.png" alt="" />
+              <p>after effects</p>
+            </div>
+            <div>
+              <img src="./images/Logo-JavaScript.png" alt="" />
+              <p>javascript</p>
+            </div>
+            <div>
+              <img src="./images/Logo-NPM.png" alt="" />
+              <p>npm</p>
+            </div>
+            <div>
+              <img src="./images/Logo-React Bootstrap.png" alt="" />
+              <p>react bootstrap</p>
+            </div>
+            <div>
+              <img src="./images/logo-photoshop.png" alt="" />
+              <p>photoshop</p>
+            </div>
+            <div>
+              <img src="./images/Logo-TypeScript.png" alt="" />
+              <p>typescript</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Material UI.png" alt="" />
+              <p>material UI</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Ant Design.png" alt="" />
+              <p>ant design</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Figma.png" alt="" />
+              <p>figma</p>
+            </div>
+            <div>
+              <img src="./images/Logo-Sass.png" alt="" />
+              <p>sass</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="served-brands p-100 bg-gray">
+        <div class="container">
+          <div class="title-secondary"><h2>Served Brands</h2></div>
+          <div class="grid-container">
+            <div>
+              <img src="./images/brands-016.svg" alt="served-brand" />
+            </div>
+            <div>
+              <img src="./images/brands-015.svg" alt="served-brand" />
+            </div>
+            <div>
+              <img src="./images/brands-014.svg" alt="served-brand" />
+            </div>
+            <div>
+              <img src="./images/brands-013.svg" alt="served-brand" />
+            </div>
+            <div>
+              <img src="./images/brands-012.svg" alt="served-brand" />
+            </div>
+            <div>
+              <img src="./images/brands-011.svg" alt="served-brand" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="achievements pb-100 bg-gray">
+        <div class="container">
+          <div class="credits-item">
+            <div class="credits-info-wrapper">
+              <h3>05</h3>
+              <p>years of <span>experience</span></p>
+            </div>
+            <div class="credits-info-wrapper">
+              <h3>150</h3>
+              <p>completed<span> projects</span></p>
+            </div>
+            <div class="credits-info-wrapper">
+              <h3>50</h3>
+              <p>happy <span> customers</span></p>
+            </div>
+            <div class="credits-info-wrapper">
+              <h3>04</h3>
+              <p>awards<span>won</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services p-100" id="services">
+        <div class="container">
+          <div class="title"><h2>My Services</h2></div>
+          <div class="grid-container">
+            <div>
+              <img src="./images/Icon-17.jpg" alt="services-01" />
+              <h3>Website Design</h3>
+              <p>
+                Elevate your online presence with our comprehensive web design
+                solutions tailored to your needs. From captivating landing pages
+                to seamless Shopify stores, we bring your vision to life with
+                precision and creativity.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-22.jpg" alt="services-01" />
+              <h3>Landing Page Design</h3>
+              <p>
+                First impressions matter. Our expert designers craft visually
+                stunning landing pages that engage visitors from the moment they
+                arrive. Whether it's driving conversions or showcasing your
+                brand, we optimize every element for maximum impact.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-20.jpg" alt="services-01" />
+              <h3>Figma/Psd to HTML</h3>
+              <p>
+                Transform your design mockups into functional, responsive HTML
+                websites with our Figma/PSD to HTML conversion service. Our
+                meticulous approach ensures pixel-perfect accuracy and seamless
+                compatibility across devices.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-19.jpg" alt="services-01" />
+              <h3>Shopify Store</h3>
+              <p>
+                Launch your online store with confidence using our Shopify store
+                creation service. Our team integrates powerful features, designs
+                captivating storefronts, and optimizes for a seamless shopping
+                experience, empowering you to grow your business online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works p-100 bg-gray" id="how-it-works">
+        <div class="container">
+          <div class="title"><h2>How It Works</h2></div>
+          <div class="grid-container">
+            <div>
+              <img src="./images/arrow-right-01.png" alt="services-01" />
+              <h3><span>1.</span> Submit Your Design</h3>
+              <p>
+                Send us your Figma or PSD source files. Ensure your design is
+                well-organized with clear layers, groups, and naming
+                conventions. You can also include any specific instructions or
+                requirements to help our developers understand your vision
+                better.
+              </p>
+            </div>
+            <div>
+              <img src="./images/arrow-right-01.png" alt="services-01" />
+              <h3><span>2.</span> Initial Review and Quotation</h3>
+              <p>
+                Our team of experienced web designers will review your submitted
+                design. We'll assess the complexity and provide you with a
+                detailed quotation and estimated timeline. During this step,
+                we'll also clarify any ambiguities and confirm the project scope
+                with you.
+              </p>
+            </div>
+            <div>
+              <img src="./images/arrow-right-01.png" alt="services-01" />
+              <h3><span>3.</span> Development and Testing</h3>
+              <p>
+                Once you approve the quotation, our developers will start
+                converting your design into high-quality, responsive HTML/CSS
+                code. We ensure that your design looks perfect across all
+                devices and browsers. Throughout this process, we perform
+                rigorous testing to guarantee functionality and compatibility.
+              </p>
+            </div>
+            <div>
+              <h3><span>4.</span> Delivery and Revisions</h3>
+              <p>
+                After development, we'll deliver the HTML files to you for
+                review. You can request any necessary revisions to ensure the
+                final output meets your expectations. Once all adjustments are
+                made, we'll provide the finalized files, ready for integration
+                into your website or application.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects p-100" id="projects">
+        <div class="container">
+          <div class="title"><h2>Recent Projects</h2></div>
+          <div class="grid-container">
+            <div>
+              <img
+                src="./images/Construction.jpg"
+                alt="Construction Website"
+                class="grid-image"
+              />
+            </div>
+            <div>
+              <img
+                src="./images/Lateral.jpg"
+                alt="Lateral Website"
+                class="grid-image"
+              />
+            </div>
+            <div>
+              <img
+                src="./images/Nexus.jpg"
+                alt="Nexus Website"
+                class="grid-image"
+              />
+            </div>
+            <div>
+              <img
+                src="./images/Nio-Land.jpg"
+                alt="Nioland Website"
+                class="grid-image"
+              />
+            </div>
+            <div>
+              <img
+                src="./images/Mediax.jpg"
+                alt="Mediax Website"
+                class="grid-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal Structure -->
+      <div id="myModal" class="modal">
+        <div class="modal-container">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div>
+      </div>
+      <section class="faqs p-100 bg-gray" id="faqs">
+        <div class="container">
+          <div class="title"><h2>FAQ</h2></div>
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What services do you offer?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We offer a comprehensive range of web design services
+                  including custom website design, responsive web design,
+                  e-commerce site design, website redesign, maintenance, and
+                  search engine optimization (SEO) integration.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do you provide responsive design?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we ensure that all HTML conversions are fully responsive,
+                  meaning they will work seamlessly across various devices and
+                  screen sizes, including desktops, tablets, and smartphones.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Will my website be SEO-friendly?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes, we design websites with SEO best practices in mind to
+                  help your site rank well in search engine results. This
+                  includes optimizing site structure, metadata, and ensuring
+                  fast load times.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >What is the process for a Figma/PSD to HTML conversion
+                  project?</span
+                >
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Our process typically involves: 1. Initial consultation and
+                  requirement gathering. 2. Review and analysis of the design
+                  files. 3. Providing a quote and timeline. 4. Converting the
+                  design to HTML/CSS. 5. Quality assurance and testing. 6.
+                  Delivery of the final files.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >How long does it take to convert a Figma/PSD design to
+                  HTML?</span
+                >
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  The turnaround time depends on the complexity and size of the
+                  project. Typically, it can take anywhere from a few days to a
+                  couple of weeks. We will provide an estimated timeline after
+                  reviewing your design files.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span
+                  >What information do you need to start the conversion
+                  process?</span
+                >
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We need your design files (Figma or PSD), any specific
+                  instructions or requirements, and any additional assets (like
+                  images or fonts) that are part of the design.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do you handle revisions and feedback?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We include a certain number of revision rounds in our service.
+                  After delivering the initial conversion, you can review and
+                  provide feedback. We will make necessary adjustments based on
+                  your input.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What if I need help after the website is launched?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  We offer post-launch support to address any issues, make
+                  updates, or answer any questions you might have. You can
+                  choose from various support packages that best suit your
+                  needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-me p-100" id="why-me">
+        <div class="container">
+          <div class="title"><h2>Why Me</h2></div>
+          <div class="grid-container">
+            <div>
+              <img src="./images/icon-11.jpg" alt="services-01" />
+              <h3>Responsive Design</h3>
+              <p>
+                In today’s digital age, having a website that looks great on all
+                devices is crucial. I specialize in responsive design, ensuring
+                your site performs perfectly on desktops, tablets, and
+                smartphones. Your customers will have a consistent and engaging
+                experience no matter how they access your site.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-15.jpg" alt="services-01" />
+              <h3>Lighting fast delivery</h3>
+              <p>
+                In today’s fast-paced digital world, time is of the essence. I
+                understand the importance of meeting deadlines and pride myself
+                on delivering high-quality work quickly. Whether you need a
+                complete website overhaul or a quick update, you can count on me
+                for prompt and efficient service without compromising on
+                quality.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-16.jpg" alt="services-01" />
+              <h3>Speed Optimization</h3>
+              <p>
+                I specialize in speed optimization, ensuring your website loads
+                quickly and efficiently. By optimizing images, leveraging
+                browser caching, and minimizing server response times, I make
+                sure your site performs at its best, providing an excellent user
+                experience and improving your chances of ranking higher in
+                search results.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-10.jpg" alt="services-01" />
+              <h3>Cutting-Edge Technology</h3>
+              <p>
+                I stay updated with the latest trends and technologies in web
+                design and development. By leveraging modern tools and
+                frameworks, I deliver fast, secure, and scalable websites that
+                stand the test of time. Your site will not only look great but
+                also perform at its best.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-9.jpg" alt="services-01" />
+              <h3>Client-Centric Approach</h3>
+              <p>
+                Your satisfaction is my top priority. I work closely with you
+                throughout the entire design process, from initial consultation
+                to final launch, and beyond. My collaborative approach ensures
+                that your vision is realized, and any feedback is promptly
+                addressed.
+              </p>
+            </div>
+            <div>
+              <img src="./images/icon-7.jpg" alt="services-01" />
+              <h3>Ongoing Support</h3>
+              <p>
+                My commitment to your project doesn’t end at launch. I offer
+                ongoing support and maintenance to ensure your website remains
+                up-to-date and continues to perform optimally. Whether you need
+                updates, troubleshooting, or new features, I’m here to help.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials p-100 bg-gray" id="testimonials">
+        <div class="container">
+          <div class="title"><h2>What Client Say</h2></div>
+          <div class="masonry-container">
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/sarah-img.jpg" alt="sarah" />
+                  </div>
+                  <div>
+                    <p>Sarah M.</p>
+                    <p class="client-title">Small Business Owner</p>
+                  </div>
+                </div>
+                <div><img src="./images/review-logo-05.png" alt="" /></div>
+              </div>
+              <p class="review-text">
+                I could be happier with the website design services provided by
+                Rubel. From the initial consultation to the final launch, the
+                process was smooth and professional. The designer captured the
+                essence of my brand perfectly and created a visually stunning
+                and highly functional website. My customers love the new site,
+                and I've seen a significant increase in traffic and engagement.
+                Highly recommend!
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/mark-image.jpg" alt="mark" />
+                  </div>
+                  <div>
+                    <p>Mark T.</p>
+                    <p class="client-title">Tech Startup Founder</p>
+                  </div>
+                </div>
+                <div><img src="./images/review-logo-06.jpeg" alt="" /></div>
+              </div>
+              <p class="review-text">
+                Rubel exceeded all my expectations! The level of creativity and
+                attention to detail was outstanding. They understood my vision
+                and translated it into a sleek, modern website that truly stands
+                out in our industry. Communication was excellent throughout the
+                project, and any revisions were handled promptly and
+                efficiently. Our website is now a powerful tool for our
+                business. Thank you!
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/emily-photo.jpg" alt="emily" />
+                  </div>
+                  <div>
+                    <p>Emily R.</p>
+                    <p class="client-title">Non-Profit Organization Director</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="./images/review-logo-04.png" alt="non-profit" />
+                </div>
+              </div>
+              <p class="review-text">
+                It was a pleasure working with Rubel. They demonstrated a deep
+                understanding of our needs and delivered a website that is not
+                only beautiful but also user-friendly and accessible. The
+                feedback from our community has been overwhelmingly positive,
+                and we've noticed an uptick in online donations and volunteer
+                sign-ups. Their expertise and passion for web design shine
+                through in their work. I highly recommend their services to
+                anyone looking to elevate their online presence.
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/john-photo.jpg" alt="john" />
+                  </div>
+                  <div>
+                    <p>John P.</p>
+                    <p class="client-title">Real Estate Agent</p>
+                  </div>
+                </div>
+                <div><img src="./images/review-logo-08.jpg" alt="" /></div>
+              </div>
+              <p class="review-text">
+                Choosing Rubel to revamp my real estate website was one of the
+                best business decisions I've made. They created a visually
+                appealing and highly functional site that has made a huge
+                difference in how I connect with potential clients. The site’s
+                sleek design, intuitive navigation, and seamless property
+                listings have received fantastic feedback from users. Rubel was
+                professional, responsive, and a true pleasure to work with. I
+                highly recommend their services for anyone needing a top-quality
+                website.
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/david-photos.jpeg" alt="david" />
+                  </div>
+                  <div>
+                    <p>David L.</p>
+                    <p class="client-title">Freelance Photographer</p>
+                  </div>
+                </div>
+                <div>
+                  <img src="./images/review-logo-01.png" alt="camera" />
+                </div>
+              </div>
+              <p class="review-text">
+                As a creative professional, having a visually appealing and
+                functional website is crucial for my business. Rubel created a
+                portfolio site that truly showcases my work in the best light.
+                The design is clean, intuitive, and optimized for both desktop
+                and mobile. They were attentive to my specific needs and
+                provided valuable insights throughout the design process. I
+                couldn't be more pleased with the final result!
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="client">
+                <div class="inner-flex">
+                  <div>
+                    <img src="./images/rachel-photo.jpeg" alt="rachel" />
+                  </div>
+                  <div>
+                    <p>Rachel K.</p>
+                    <p class="client-title">E-commerce Store Owner</p>
+                  </div>
+                </div>
+                <div><img src="./images/review-logo-03.png" alt="" /></div>
+              </div>
+              <p class="review-text">
+                Working with Rubel was an excellent experience. They transformed
+                my outdated website into a modern, user-friendly e-commerce
+                platform that has drastically improved my sales. Their expertise
+                in design and understanding of user experience is top-notch. The
+                project was completed on time and within budget, and their
+                ongoing support has been fantastic. I highly recommend their
+                services to anyone looking to enhance their online store.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact p-100" id="contact">
+        <div class="container">
+          <div class="title"><h2>Contact</h2></div>
+          <div class="contact-container">
+            <div class="contact-info-container">
+              <div class="contact-info">
+                <h2>let's make a discussion</h2>
+                <p class="contact-sub-details">
+                  I’d love to hear about your project and how I can help bring
+                  your ideas to life. Feel free to reach out using the form
+                  below or contact me directly.
+                </p>
+                <div class="contact-intro">
+                  <div class="contact-inner">
+                    <i class="bx bx-current-location"></i>
+                    <p>address:</p>
+                    <p>02 mitali, sylhet, Bangladesh</p>
+                  </div>
+                  <div class="contact-inner">
+                    <i class="bx bxs-envelope"></i>
+                    <p>e-mail:</p>
+                    <p>
+                      <a href="mailto:mr.rubelshahriar@gmail.com">
+                        mr.rubelshahriar@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                  <div class="contact-inner">
+                    <i class="bx bxl-whatsapp"></i>
+                    <p>Whatsapp:</p>
+                    <p class="number">+8801568210618</p>
+                  </div>
+                  <div class="contact-icons">
+                    <a href="https://github.com/RubelShahriar"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/mrrubelmia/"
+                      ><i class="bx bxl-linkedin"></i
+                    ></a>
+                    <a href="https://twitter.com/RubelShr"
+                      ><i class="bx bxl-twitter"></i
+                    ></a>
+                    <a href="https://www.instagram.com/mdrubelshahriar/"
+                      ><i class="bx bxl-instagram-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-inputs">
+              <p class="contact-pre">Contact me</p>
+              <div class="input-text-mail">
+                <div>
+                  <input
+                    id="first-name"
+                    class="uni-input"
+                    type="text"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    id="last-name"
+                    class="uni-input"
+                    type="text"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <input id="email" type="email" placeholder=" Email" required />
+              <input id="subject" type="text" placeholder=" Subject" required />
+              <textarea id="message" placeholder="Message" required></textarea>
+              <div class="btn-main">
+                <button onclick="sendMail()" class="button">
+                  send message
+                  <i class="bx bxs-paper-plane btn-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2024 | All rights reserved by Rubel</p>
+    </footer>
+    <!-- script link -->
+    <script src="script.js"></script>
+  </body>
+</html>
