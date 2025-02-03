@@ -1,3 +1,11 @@
+// About me (Age)
+function Age() {
+  const newAge = new Date().getFullYear();
+  document.getElementById("about-me-age").innerHTML = newAge - 2000;
+  document.getElementById("footer-year").innerHTML = newAge;
+}
+Age();
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
